@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма с номером телефона</title>
+</head>
+<body>
+    <h2>Введите номер телефона</h2>
+    <form action="process.php" method="post">
+        <label for="phone">Номер телефона:</label>
+        <input type="text" name="phone" placeholder="+7 123 456 78 90" required pattern="\+[0-9]{1,3} [0-9]{1,3} [0-9]{1,3} [0-9]{1,2} [0-9]{1,2}" title="Введите номер в формате +7 123 456 78 90">
+        
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
